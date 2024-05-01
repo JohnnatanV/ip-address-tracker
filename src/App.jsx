@@ -1,35 +1,48 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import arrow from "./assets/icon-arrow.svg";
+import background from "./assets/pattern-bg-desktop.png";
 
+// https://geo.ipify.org/api/v2/country,city?apiKey=at_ddQCO1r3qBbABmNPBUzktIooTKUvh&ipAddress=8.8.8.8
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <main>
+        <section>
+          <div className="bg-container">
+            <img src={background} alt="background-image" className="bg-img" />
+          </div>
+          <h1 className="main-title">IP Address Tracker</h1>
+          <form action={""}>
+            <input
+              placeholder="Search for any IP address or domain"
+              type="text"
+              id="ipaddress"
+              name="ipaddress"
+              required
+            />
+            <button type="submit">
+              <img src={arrow} alt="arrow-icon" />
+            </button>
+          </form>
+        </section>
+        <section>
+          <span>IP Address</span>
+          <span>Location</span>
+          <span>Timezone</span>
+          <span>UTC /* add offset value dynamically using the API */</span>
+          <span>ISP</span>
+        </section>
+      </main>
+      <footer>
+        <article className="attribution">
+          Challenge by{" "}
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">
+            Frontend Mentor
+          </a>
+          . Coded by <a href="#">Your Name Here</a>.
+        </article>
+      </footer>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
