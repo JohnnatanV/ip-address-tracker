@@ -43,24 +43,31 @@ main {
   place-items: center;
 }
 
+.main-title {
+  color: #ffffff;
+  margin-top: 3.4rem;
+}
+
 form {
   display: flex;
-  input,
-  button {
-    padding: 1rem 2.2rem;
-  }
+  margin-top: 2.2rem;
 
   input {
+    padding: 1rem 2.2rem;
     border-radius: 8px 0 0 8px;
     border: none;
-    /*    padding: 0.6em 1.2em; */
     width: 25rem;
+    height: 2.3rem;
   }
 
   button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 4rem;
+    height: 2.3rem;
     border-radius: 0 8px 8px 0;
     border: none;
-    /*   padding: 0.6em 1.2em; */
     font-size: 1em;
     font-weight: 500;
     font-family: inherit;
@@ -85,7 +92,7 @@ form {
 
 .bg-img {
   width: 100%;
-  height: 20rem;
+  max-height: 20rem;
 }
 
 .attribution {

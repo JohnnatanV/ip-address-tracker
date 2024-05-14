@@ -1,5 +1,6 @@
-import arrow from "./assets/icon-arrow.svg";
-import background from "./assets/pattern-bg-desktop.png";
+import Title from "./Title";
+import Form from "./Form";
+import Pattern from "./Pattern";
 
 // https://geo.ipify.org/api/v2/country,city?apiKey=at_ddQCO1r3qBbABmNPBUzktIooTKUvh&ipAddress=8.8.8.8
 function App() {
@@ -7,22 +8,9 @@ function App() {
     <>
       <main>
         <section>
-          <div className="bg-container">
-            <img src={background} alt="background-image" className="bg-img" />
-          </div>
-          <h1 className="main-title">IP Address Tracker</h1>
-          <form action={""}>
-            <input
-              placeholder="Search for any IP address or domain"
-              type="text"
-              id="ipaddress"
-              name="ipaddress"
-              required
-            />
-            <button type="submit">
-              <img src={arrow} alt="arrow-icon" />
-            </button>
-          </form>
+          <Pattern />
+          <Title />
+          <Form />
         </section>
         <section>
           <span>IP Address</span>
