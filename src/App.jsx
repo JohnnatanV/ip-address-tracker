@@ -16,7 +16,7 @@ function App() {
           <span>IP Address</span>
           <span>Location</span>
           <span>Timezone</span>
-          <span>UTC /* add offset value dynamically using the API */</span>
+          <span>UTC</span>
           <span>ISP</span>
         </section>
       </main>
