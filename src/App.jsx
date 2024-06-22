@@ -1,6 +1,7 @@
 import Title from "./Title";
 import Form from "./Form";
 import Pattern from "./Pattern";
+import Infotron from "./Infotron";
 
 // https://geo.ipify.org/api/v2/country,city?apiKey=at_ddQCO1r3qBbABmNPBUzktIooTKUvh&ipAddress=8.8.8.8
 function App() {
@@ -13,11 +14,7 @@ function App() {
           <Form />
         </section>
         <section>
-          <span>IP Address</span>
-          <span>Location</span>
-          <span>Timezone</span>
-          <span>UTC</span>
-          <span>ISP</span>
+          <Infotron />
         </section>
       </main>
       <footer>
