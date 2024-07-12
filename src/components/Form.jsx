@@ -1,5 +1,5 @@
 import "./Form.css";
-import arrow from "./assets/icon-arrow.svg";
+import arrow from "../data/icon-arrow.svg";
 
 function Form() {
   return (
