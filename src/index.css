@@ -31,6 +31,11 @@
   background-image: url("./data/pattern-bg-desktop.png");
 }
 
+.fix-center {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 footer {
   position: absolute;
   left: 0;
