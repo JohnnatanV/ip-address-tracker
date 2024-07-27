@@ -50,3 +50,9 @@ footer {
     color: hsl(228, 45%, 44%);
   }
 }
+
+@media screen and (min-width: 370px) {
+  .xm-screen {
+    top: 18rem;
+  }
+}
